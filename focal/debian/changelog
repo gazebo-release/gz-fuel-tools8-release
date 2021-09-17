@@ -1,3 +1,9 @@
+ignition-fuel-tools7 (7.0.0~pre1-1~focal) focal; urgency=medium
+
+  * ignition-fuel-tools7 7.0.0~pre1-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Fri, 17 Sep 2021 15:18:08 -0700
+
 ignition-fuel-tools7 (6.999.999-1~focal) focal; urgency=medium
 
   * Stub to be removed after first entry
