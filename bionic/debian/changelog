@@ -1,18 +1,6 @@
-ignition-fuel-tools7 (7.0.0-1~bionic) bionic; urgency=medium
-
-  * ignition-fuel-tools7 7.0.0-1 release
-
- -- Louise Poubel <louise@openrobotics.org>  Tue, 28 Sep 2021 14:52:31 -0700
-
-ignition-fuel-tools7 (7.0.0~pre1-1~bionic) bionic; urgency=medium
-
-  * ignition-fuel-tools7 7.0.0~pre1-1 release
-
- -- Louise Poubel <louise@openrobotics.org>  Fri, 17 Sep 2021 15:18:08 -0700
-
-ignition-fuel-tools7 (6.999.999-1~bionic) bionic; urgency=medium
+ignition-fuel-tools8 (7.999.999-1~bionic) bionic; urgency=medium
 
   * Stub to be removed after first entry
 
- -- Louise Poubel <louise@openrobotics.org>  Thu, 01 Apr 2021 15:26:08 -0700
+ -- Louise Poubel <louise@openrobotics.org>  Thu, 07 Oct 2021 15:31:50 -0700
 

@@ -1,4 +1,4 @@
-Source: ignition-fuel-tools7
+Source: ignition-fuel-tools8
 Standards-Version: 3.9.8
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
@@ -16,11 +16,11 @@ Build-Depends: cmake,
                libcurl4-openssl-dev,
                libyaml-dev,
                libtinyxml2-dev
-Vcs-Browser: https://github.com/ignition-release/ign-fuel-tools7-release
-Vcs-Git: https://github.com/ignition-release/ign-fuel-tools7-release
+Vcs-Browser: https://github.com/ignition-release/ign-fuel-tools8-release
+Vcs-Git: https://github.com/ignition-release/ign-fuel-tools8-release
 Homepage: http://ignitionrobotics.org/
 
-Package: libignition-fuel-tools7
+Package: libignition-fuel-tools8
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -31,7 +31,7 @@ Description: Ignition fuel-tools classes and functions for robot apps - Shared l
   Ignition fuel-tools is a component in the ignition framework, a set of libraries
   designed to rapidly develop robot applications.
 
-Package: libignition-fuel-tools7-dev
+Package: libignition-fuel-tools8-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev (>= 2.3.0),
@@ -43,7 +43,7 @@ Depends: libignition-cmake2-dev (>= 2.3.0),
        libcurl4-openssl-dev,
        libyaml-dev,
        libtinyxml2-dev,
-       libignition-fuel-tools7 (= ${binary:Version}),
+       libignition-fuel-tools8 (= ${binary:Version}),
        ${misc:Depends}
 Multi-Arch: same
 Description: Ignition fuel-tools classes and functions for robot apps - Development files
