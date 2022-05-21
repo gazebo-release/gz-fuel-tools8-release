@@ -1,3 +1,9 @@
+gz-fuel-tools8 (7.999.999-2~jammy) jammy; urgency=medium
+
+  * Change package source name
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Sat, 21 May 2022 23:14:26 +0200
+
 ignition-fuel-tools8 (7.999.999-1~jammy) jammy; urgency=medium
 
   * First release for jammy

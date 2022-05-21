@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: ignition_fuel_tools
-Upstream-Contact: https://github.com/ignitionrobotics/ign-fuel-tools/issues
-Source: https://github.com/ignitionrobotics/ign-fuel-tools
+Upstream-Name: gz_fuel_tools
+Upstream-Contact: https://github.com/gazebosim/ign-fuel-tools/issues
+Source: https://github.com/gazebosim/ign-fuel-tools
 Files-Excluded: test/gtest NEWS INSTALL_WINDOWS.md configure.bat
 
 Files: *
