@@ -1,6 +1,6 @@
 usr/include/*
 usr/lib/*/*.so
 usr/lib/*/pkgconfig/*.pc
-usr/lib/*/cmake/+(ignition|gz)-*/*
-usr/share/+(ignition|gz)/fuel[0-99].yaml
-usr/share/+(ignition|gz)/+(ignition|gz)-fuel_tools[0-99]/+(ignition|gz)-fuel_tools*.tag.xml
+usr/lib/*/cmake/*-*/*
+usr/share/*/fuel[0-99].yaml
+usr/share/*/*-fuel_tools[0-99]/*-fuel_tools*.tag.xml
