@@ -15,10 +15,10 @@ Build-Depends: cmake,
                libcurl4-openssl-dev,
                libyaml-dev,
                libtinyxml2-dev
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-fuel-tools
-Vcs-Git: https://github.com/ignition-release/ign-fuel-tools8-release
+Vcs-Browser: https://github.com/gazebosim/gz-fuel-tools
+Vcs-Git: https://github.com/gazebo-release/gz-fuel-tools8-release
 Standards-Version: 4.5.1
-Homepage: http://ignitionrobotics.org/
+Homepage: http://gazebosim.org/
 
 Package: libignition-fuel-tools8
 Architecture: any
@@ -27,12 +27,12 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends},
          ignition-tools2
 Multi-Arch: same
-Description: Ignition fuel-tools classes and functions - Shared library
- Ignition Fuel Tools is composed by a client library and command line
- tools for interacting with Ignition Fuel servers. These servers host and
+Description: Gazebo fuel-tools classes and functions - Shared library
+ Gazebo Fuel Tools is composed by a client library and command line
+ tools for interacting with Gazebo Fuel servers. These servers host and
  manage different 3D robotics models.
  .
- The package ships the ignition fuel libraries
+ The package ships the Gazebo fuel libraries
 
 Package: libignition-fuel-tools8-dev
 Architecture: any
@@ -49,9 +49,9 @@ Depends: libignition-cmake3-dev,
        libignition-fuel-tools8 (= ${binary:Version}),
        ${misc:Depends}
 Multi-Arch: same
-Description: Ignition fuel-tools classes and functions - Development files
- Ignition Fuel Tools is composed by a client library and command line
- tools for interacting with Ignition Fuel servers. These servers host and
+Description: Gazebo fuel-tools classes and functions - Development files
+ Gazebo Fuel Tools is composed by a client library and command line
+ tools for interacting with Gazebo Fuel servers. These servers host and
  manage different 3D robotics models.
  .
- The package ships the ignition fuel development headers and libraries
+ The package ships the Gazebo fuel development headers and libraries
