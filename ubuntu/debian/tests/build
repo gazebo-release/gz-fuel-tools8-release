@@ -1,5 +1,5 @@
 #!/bin/sh
-# autopkgtest check: Build and run a program against ign-common, to verify that the
+# autopkgtest check: Build and run a program against gz-common, to verify that the
 # headers and pkg-config file are installed correctly
 # (C) 2012 Jose Luis Rivero
 # Author: Jose Luis Rivero <jrivero@osrfoundation.org>
@@ -9,7 +9,7 @@ set -e
 WORKDIR=$(mktemp -d)
 trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
 cd $WORKDIR
-cat <<EOF > igntest.cc
+cat <<EOF > gztest.cc
 #include <gflags/gflags.h>
 #include <iostream>
 #include <gz/fuel_tools.hh>
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 {
   // Simple usage.
   std::string usage("Show details of a resource.");
-  usage += " Usage:\n  ./igntest <options>\n\n";
+  usage += " Usage:\n  ./gztest <options>\n\n";
   usage += "  Example:\n"
     "\t ./details -t model -o OpenRobotics -n Beer"
     "\t ./details -t world -s https://localhost:4430 -o OpenRobotics -n Empty"
@@ -127,42 +127,42 @@ EOF
 cat <<EOF > CMakeLists.txt
 cmake_minimum_required(VERSION 3.5)
 
-project(ign_test VERSION 1.0.0)
+project(gz_test VERSION 1.0.0)
 
 find_package(gflags REQUIRED)
-find_package(ignition-fuel_tools7 7.0.0 REQUIRED)
+find_package(gz-fuel_tools7 7.0.0 REQUIRED)
 include_directories(\${IGNITION-FUEL_TOOLS_INCLUDE_DIRS})
 include_directories(\${IGNITION-COMMON_INCLUDE_DIRS})
-add_executable(igntest igntest.cc)
-target_link_libraries(igntest \${ignition-fuel_tools7_LIBRARIES} gflags)
+add_executable(gztest gztest.cc)
+target_link_libraries(gztest \${gz-fuel_tools7_LIBRARIES} gflags)
 EOF
 
 cmake .
 echo "configure cmake: OK"
 VERBOSE=1 make
 echo "build cmake:OK"
-[ -x igntest ]
-./igntest --help
+[ -x gztest ]
+./gztest --help
 echo "run: OK"
 
 cat <<EOF > CMakeLists.txt
 cmake_minimum_required(VERSION 3.5)
 
-project(ign_test VERSION 1.0.0)
+project(gz_test VERSION 1.0.0)
 
 find_package(gflags REQUIRED)
-find_package(ignition-fuel_tools7 7.0.0 REQUIRED)
-add_executable(igntest igntest.cc)
-target_link_libraries(igntest
+find_package(gz-fuel_tools7 7.0.0 REQUIRED)
+add_executable(gztest gztest.cc)
+target_link_libraries(gztest
    PUBLIC
       gflags
-      ignition-fuel_tools7::ignition-fuel_tools7)
+      gz-fuel_tools7::gz-fuel_tools7)
 EOF
 
 cmake .
 echo "configure cmake with component: OK"
 make
 echo "build cmake component:OK"
-[ -x igntest ]
-./igntest --help
+[ -x gztest ]
+./gztest --help
 echo "run: OK"
