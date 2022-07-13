@@ -25,7 +25,7 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends},
-         ignition-tools2
+         gz-tools2
 Breaks: libignition-fuel-tools8 (<< 7.999.999+nightly+git20220630+1r9f719f72c7ab2ba70f899b766bafd32dc38cf9cb-1)
 Replaces: libignition-fuel-tools8 (<< 7.999.999+nightly+git20220630+1r9f719f72c7ab2ba70f899b766bafd32dc38cf9cb-1)
 Multi-Arch: same
