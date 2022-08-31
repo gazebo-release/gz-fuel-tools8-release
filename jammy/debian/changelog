@@ -1,3 +1,9 @@
+gz-fuel-tools8 (8.0.0~pre1-1~jammy) jammy; urgency=medium
+
+  * gz-fuel-tools8 8.0.0~pre1-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Wed, 31 Aug 2022 12:55:04 -0700
+
 gz-fuel-tools8 (7.999.999-1~jammy) jammy; urgency=medium
 
   * First release for jammy
