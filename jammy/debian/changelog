@@ -1,3 +1,9 @@
+gz-fuel-tools8 (8.0.1-1~jammy) jammy; urgency=medium
+
+  * gz-fuel-tools8 8.0.1-1 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Tue, 22 Nov 2022 12:26:06 -0800
+
 gz-fuel-tools8 (8.0.0-1~jammy) jammy; urgency=medium
 
   * gz-fuel-tools8 8.0.0-1 release
