@@ -42,7 +42,6 @@ Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
        libgz-common5-core-dev,
-       libgz-common5-testing-dev,
        libgz-msgs9-dev,
        libgz-tools2-dev,
        libzip-dev,
