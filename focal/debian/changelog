@@ -1,3 +1,9 @@
+gz-fuel-tools8 (8.2.0-1~focal) focal; urgency=medium
+
+  * gz-fuel-tools8 8.2.0-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 07 Nov 2024 18:19:33 +0100
+
 gz-fuel-tools8 (8.1.0-1~focal) focal; urgency=medium
 
   * gz-fuel-tools8 8.1.0-1 release
